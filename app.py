@@ -10,7 +10,7 @@ import whatsapp
 
 db.init()
 st.set_page_config(page_title="WhatsApp CRM & Renewal Reminder", layout="wide")
-st.title("WhatsApp CRM & Renewal Reminder (Mumbai Demo)")
+st.title("WhatsApp CRM & Renewal Reminder")
 
 # ---------- Helpers ----------
 def list_clients():
@@ -219,3 +219,4 @@ elif tab == "Bulk WhatsApp":
                     st.error(f"❌ Failed {failed} messages. Check numbers / Twilio logs.")
 
 st.caption("Tip: Trial Twilio can only send to verified numbers. For production, use a WhatsApp Business number and approved templates.")
+
